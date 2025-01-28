@@ -46,7 +46,7 @@ public class Program
     {
         Console.Write("Введите вашу дату рождения (в формате ГГГГ-ММ-ДД): ");
         var input = Console.ReadLine();
-        if (DateTime.TryParseExact(input, "yyyy/MM/dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out var birthDate))
+        if (DateTime.TryParseExact(input, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out var birthDate))
         {
             return birthDate;
         }
